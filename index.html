@@ -3,46 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Arya Venu</title>
+    <title>Aryavenu - Portfolio</title>
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        nav {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            gap: 1rem;
+            background: #333;
+            padding: 0.5rem;
         }
-        .email {
-            text-align: center;
-            font-size: 1.5rem;
-            background: #fff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .email a {
-            color: #8e44ad;
+
+        nav a {
+            color: white;
             text-decoration: none;
-            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
         }
-        .email a:hover {
+
+        nav a:hover {
+            background: #ff9a9e;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        section:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .about-me {
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            color: white;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            background: #ff9a9e;
+            color: white;
+            padding: 0.5rem;
+            margin: 0.5rem auto;
+            display: inline-block;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .skills ul li:hover {
+            transform: scale(1.1);
+        }
+
+        .projects {
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            color: white;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer a {
+            color: #ff9a9e;
+            text-decoration: none;
+        }
+
+        footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            nav {
+                flex-wrap: wrap;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="email">
-        <p>Email me at:</p>
-        <a href="mailto:aryavenucc@gmail.com">aryavenucc@gmail.com</a>
-    </div>
+    <header>
+        <h1>Welcome to Aryavenu's Portfolio</h1>
+        <p>A student who loves coding, teaching, dancing, and learning new things every day.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about-me">
+        <h2>About Me</h2>
+        <p>Hi! I'm arya, a passionate student currently learning web development. I enjoy exploring new skills and making a difference with my creativity and dedication.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>Leadership</li>
+            <li>Communication</li>
+            <li>Coding</li>
+            <li>Dancing</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <p>I created a project for a house rental management system that included booking, management, and seamless user experience. More projects coming soon!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email or follow me on social media.</p>
+        <p>Email: <a href="mailto:aryavenucc@gmail.com">aryavenucc@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sreya K A. All rights reserved. | Designed with <span>&#10084;</span></p>
+    </footer>
 </body>
 </html>
+        
 
-            
             
             
     
