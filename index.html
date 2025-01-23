@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arya Venu - portfolio</title>
+    <title>Arya Venu - Personal Website</title>
     <style>
         body {
             margin: 0;
@@ -51,11 +51,45 @@
             color: #fff;
         }
 
+        #contact {
+            background: #f1c40f;
+            color: #333;
+        }
+
         footer {
             text-align: center;
             padding: 1rem;
             background: #2c3e50;
             color: #fff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        form input, form textarea, form button {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background: #8e44ad;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background: #6c3483;
         }
 
         /* Mobile Responsive */
@@ -99,8 +133,31 @@
         <p>I have worked on a <strong>House Rental Management System</strong> project that simplifies property rental processes efficiently and effectively.</p>
     </section>
 
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:aryavenucc@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
     <footer>
         <p>&copy; 2025 Arya Venu. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
+           
+            
+            
+            
+    
+        
